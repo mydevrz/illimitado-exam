@@ -44,4 +44,4 @@ Premium rates live in the `OtRate` table (Calculator row 8), keyed by the `TimeA
 - Test 4 says "rename sheet 1 to OTR" for the second sheet. The sheet is named `OTR` as written.
 - `PAYREG` has two `MONTHLY SALARY RATE` columns, so the second is stored as `MONTHLY SALARY RATE 2`.
 - Placeholder cells such as `"  -  "` are read as null.
-- The exam workbook is confidential, so `data/` is git-ignored and is not part of the repository.
+- `data/Book1.xlsx` holds the sheets copied out of the exam workbook (EmpMaster, Attendance, Calculator, OTREG, PAYREG), as values without formulas. It is the file to upload in step 1 of the Swagger test. This repository is private.

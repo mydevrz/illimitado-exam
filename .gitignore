@@ -4,4 +4,3 @@ obj/
 .pg.local
 appsettings.Development.json
 *.user
-data/
