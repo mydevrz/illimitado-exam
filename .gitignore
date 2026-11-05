@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+.pg.local
+appsettings.Development.json
+*.user
+data/

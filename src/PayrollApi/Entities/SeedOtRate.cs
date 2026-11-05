@@ -1,0 +1,47 @@
+namespace PayrollApi.Entities;
+
+public static partial class SeedData
+{
+    public static OtRate[] OtRates => new[]
+    {
+        new OtRate { Id = 1, Key = "RegDaysWrk", Description = "REG DAYS WRK", Unit = "Days", Category = "Excluded", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 2, Key = "TardyHrs", Description = "TARDY HRS", Unit = "Hours", Category = "Deduction", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 3, Key = "UndertimeHrs", Description = "UNDERTIME HRS", Unit = "Hours", Category = "Deduction", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 4, Key = "AbsentDays", Description = "ABSENT DAYS", Unit = "Days", Category = "Deduction", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 5, Key = "LwopDays", Description = "LWOP DAYS", Unit = "Days", Category = "Deduction", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 6, Key = "VlDays", Description = "VL DAYS", Unit = "Days", Category = "Excluded", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 7, Key = "SlDays", Description = "SL DAYS", Unit = "Days", Category = "Excluded", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 8, Key = "OtherLvDays", Description = "OTHER LV DAYS", Unit = "Days", Category = "Excluded", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 9, Key = "NiteDiff10Pct", Description = "NITE-DIFF 10%", Unit = "Hours", Category = "Overtime", PremiumRate = 0.15m, Note = null },
+        new OtRate { Id = 10, Key = "RegularOt", Description = "REGULAR-OT", Unit = "Hours", Category = "Overtime", PremiumRate = 1.25m, Note = null },
+        new OtRate { Id = 11, Key = "RegOtNpHrs10Pct", Description = "REG-OT (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.1875m, Note = null },
+        new OtRate { Id = 12, Key = "LegalHolOt", Description = "LEGAL HOL OT", Unit = "Hours", Category = "Overtime", PremiumRate = 1m, Note = null },
+        new OtRate { Id = 13, Key = "LegalHolOtNpHrs10Pct", Description = "LEGAL HOL OT (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.2m, Note = null },
+        new OtRate { Id = 14, Key = "LegalHolOtGt8hrs", Description = "LEGAL HOL OT > 8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 2.6m, Note = null },
+        new OtRate { Id = 15, Key = "LegalHolOtGt8NpHrs10Pct", Description = "LEGAL HOL OT >8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 2.86m, Note = null },
+        new OtRate { Id = 16, Key = "LegalHolRd", Description = "LEGAL HOL RD", Unit = "Hours", Category = "Overtime", PremiumRate = 2.6m, Note = null },
+        new OtRate { Id = 17, Key = "LegalHolRdNpHrs10Pct", Description = "LEGAL HOL RD (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.26m, Note = null },
+        new OtRate { Id = 18, Key = "LegalHolRdGt8hrs", Description = "LEGAL HOL RD >8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 3.38m, Note = null },
+        new OtRate { Id = 19, Key = "LegalHolRdGt8NpHrs10Pct", Description = "LEGAL HOL RD >8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 3.718m, Note = null },
+        new OtRate { Id = 20, Key = "SpeclHolOt", Description = "SPECL HOL OT", Unit = "Hours", Category = "Overtime", PremiumRate = 0.3m, Note = null },
+        new OtRate { Id = 21, Key = "SpeclHolOtNpHrs10Pct", Description = "SPECL HOL OT (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.13m, Note = null },
+        new OtRate { Id = 22, Key = "SpeclHolidayOtGt8", Description = "SPECL HOLIDAY OT >8", Unit = "Hours", Category = "Overtime", PremiumRate = 1.69m, Note = null },
+        new OtRate { Id = 23, Key = "SpeclHolOtGt8NpHrs10Pct", Description = "SPECL HOL OT >8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 1.859m, Note = "Calculator!AX8 holds 185.9 (typo, pattern is 1.69 x 1.1 = 1.859)" },
+        new OtRate { Id = 24, Key = "SpecialHolidayRd", Description = "SPECIAL HOLIDAY RD", Unit = "Hours", Category = "Overtime", PremiumRate = 1.5m, Note = null },
+        new OtRate { Id = 25, Key = "SpecialHolRdNpHrs10Pct", Description = "SPECIAL HOL RD (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.15m, Note = null },
+        new OtRate { Id = 26, Key = "SpeclHolidayOnRdGt8hrs", Description = "SPECL HOLIDAY ON RD > 8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 1.95m, Note = null },
+        new OtRate { Id = 27, Key = "SpeclHolRdGt8NpHrs10Pct", Description = "SPECL HOL RD > 8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 2.145m, Note = null },
+        new OtRate { Id = 28, Key = "RestDayOt", Description = "REST DAY OT", Unit = "Hours", Category = "Overtime", PremiumRate = 1.3m, Note = null },
+        new OtRate { Id = 29, Key = "RestDayOtNpHrs10Pct", Description = "REST DAY OT (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.13m, Note = null },
+        new OtRate { Id = 30, Key = "RestDayOtGt8hrs", Description = "REST DAY OT > 8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 1.69m, Note = null },
+        new OtRate { Id = 31, Key = "RestDayOtGt8NpHrs10Pct", Description = "REST DAY OT > 8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 1.859m, Note = null },
+        new OtRate { Id = 32, Key = "DoubleHolidayOt", Description = "DOUBLE HOLIDAY OT", Unit = "Hours", Category = "Overtime", PremiumRate = 2m, Note = null },
+        new OtRate { Id = 33, Key = "DoubleHolidayOtNpHrs10Pct", Description = "DOUBLE HOLIDAY OT (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.3m, Note = null },
+        new OtRate { Id = 34, Key = "DoubleHolidayOtGt8hrs", Description = "DOUBLE HOLIDAY OT > 8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 3.9m, Note = null },
+        new OtRate { Id = 35, Key = "DoubleHolidayOtGt8NpHrs10Pct", Description = "DOUBLE HOLIDAY OT > 8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 4.29m, Note = null },
+        new OtRate { Id = 36, Key = "DoubleHolidayRd", Description = "DOUBLE HOLIDAY RD", Unit = "Hours", Category = "Overtime", PremiumRate = 3.9m, Note = null },
+        new OtRate { Id = 37, Key = "DoubleHolRdNpHrs10Pct", Description = "DOUBLE HOL RD (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 0.39m, Note = null },
+        new OtRate { Id = 38, Key = "DoubleHolOnRdGt8hrs", Description = "DOUBLE HOL ON RD > 8HRS", Unit = "Hours", Category = "Overtime", PremiumRate = 5.07m, Note = null },
+        new OtRate { Id = 39, Key = "DoubleHolRdGt8NpHrs10Pct", Description = "DOUBLE HOL RD > 8 (NP HRS 10%)", Unit = "Hours", Category = "Overtime", PremiumRate = 5.58m, Note = null },
+    };
+}
