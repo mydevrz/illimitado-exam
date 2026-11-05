@@ -5,7 +5,7 @@
 ## Run
 
 1. PostgreSQL 16 running on `localhost:5432`.
-2. Put the connection string in `src/PayrollApi/appsettings.Development.json` (git-ignored; `appsettings.json` has a placeholder).
+2. Set the `postgres` password of your own PostgreSQL in `src/PayrollApi/appsettings.Development.json`. The value committed there is the password of the author's local PostgreSQL, so it will not work on another machine. `appsettings.json` only has a placeholder.
 3. `dotnet ef database update --project src/PayrollApi` (creates the tables and the seed data). The API also applies the migration on start-up.
 4. `dotnet run --project src/PayrollApi --urls http://localhost:5080`, then open `/swagger`.
 
